@@ -6,3 +6,4 @@
 (reduce(source_array){|memo,n|memo && n}) .to be_truthy
 (reduce(source_array){|memo, n| memo && n}) .to be_falsy
 (reduce(source_array){|memo, n|memo||n}) .to eq(true)
+(reduce(source_array){|memo, n| memo && n}) .to eq(false)
